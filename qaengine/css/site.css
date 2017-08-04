@@ -1,0 +1,29 @@
+
+.small { color: #666; font-size: 0.875em; }
+.large { font-size: 1.25em; }
+
+
+label {
+    font-weight: bold;
+} 
+
+input[type="text"] {
+    margin: 0.5em 0 1em 0;
+    padding: 0.5em;
+}
+
+button#datepicker-button {
+    margin-bottom: 3em;
+}
+
+.flow-element {
+    display: inline-block;
+    margin-right: 3em;
+    vertical-align: top;
+}
+.flow-element:last-child {
+    margin-right: 0;
+}
+.flow-element input {
+    margin-top: 0;
+}
