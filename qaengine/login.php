@@ -38,7 +38,7 @@ if(isset($_POST["submit"]))
 	$res=mysqli_query($conn,$q) or die ("Error in query" . mysqli_error($conn));
 	$cnt=mysqli_affected_rows($conn);
 	if($cnt==1)
-	{   
+	{
 	   $x=mysqli_fetch_array($res);
 	   $_SESSION["n"]=$x[0];
 	   $_SESSION["un"]=$x[5];
@@ -49,14 +49,14 @@ if(isset($_POST["submit"]))
 		header("location:adminpanel.php");
 	   }
 	   else
-	   { 
+	   {
 	   if(isset($_GET["returnurl"]))
 	   {
 		   $pgname=$_GET["returnurl"];
 		   header("location:$pgname");
 	   }
 		   else {
-		header("location:indexuser.php");  
+		header("location:indexuser.php");
 		   }
 	   }
 	 }
@@ -92,11 +92,11 @@ Password </label>
 <a href="signup.php" class="link_sign_up">Sign up here</a><span>or sign in with</span>
 <ul class="social-icon clearfix">
 
- 
+
 </ul>
 </div>
 </form>
-</div>  
+</div>
 <div class="clearfix grey-line"></div>
 </div>
 <div class="row q-filter-waypoints collapse" id="q_filter_waypoints">
@@ -109,7 +109,7 @@ Password </label>
 <div class="col-md-2 hidden-xs hidden-sm">
 <span class="q-f-title">
 All Questions </span>
-</div> 
+</div>
 <div class="col-md-5 col-sm-6 col-xs-6">
 <ul class="q-f-sort">
 <li>
@@ -122,12 +122,12 @@ Latest </a>
 <li>
 
 </li>
-</ul> 
+</ul>
 </div>
 <div class="col-md-5 col-sm-6 col-xs-6 categories-wrapper">
 <div class="select-categories-wrapper fixed">
 
-</div>  
+</div>
 </div>
 </div>
 </div>
@@ -142,7 +142,7 @@ Latest </a>
 <span><?php
 require_once("vars.php");
 
-	$conn=mysqli_connect(host,uname,pass,dbname) or die("Error in connection " . mysqli_connect_error());	
+	$conn=mysqli_connect(host,uname,pass,dbname) or die("Error in connection " . mysqli_connect_error());
 	$q="select QuestionID from addquestion";
 	$res=mysqli_query($conn,$q) or die("Error in query " . mysqli_error($conn));
 	$cnt=mysqli_affected_rows($conn);
@@ -163,7 +163,7 @@ require_once("vars.php");
 <span><?php
 require_once("vars.php");
 
-	$conn=mysqli_connect(host,uname,pass,dbname) or die("Error in connection " . mysqli_connect_error());	
+	$conn=mysqli_connect(host,uname,pass,dbname) or die("Error in connection " . mysqli_connect_error());
 	$q="select Email from signup";
 	$res=mysqli_query($conn,$q) or die("Error in query " . mysqli_error($conn));
 	$cnt=mysqli_affected_rows($conn);
@@ -185,15 +185,15 @@ require_once("vars.php");
 <div class="widget user-widget">
   <div class="hot-user-question">  </div>
 </div>
-</div>  </div> 
-</div> 
+</div>  </div>
+</div>
 <div style="display:none;">
 <div id="wp-temp_id-wrap" class="wp-core-ui wp-editor-wrap html-active"><link rel='stylesheet' id='dashicons-css' href='../files/wp-includes/css/dashicons.minc74f.css?ver=1463369188' type='text/css' media='all'/>
 <link rel='stylesheet' id='editor-buttons-css' href='../files/wp-includes/css/editor.minc74f.css?ver=1463369188' type='text/css' media='all'/>
 <div id="wp-temp_id-editor-container" class="wp-editor-container"><textarea class="wp-editor-area" rows="20" tabindex="5" cols="40" name="post_content" id="temp_id"></textarea></div>
 </div>
 </div>
- 
+
 <div class="modal fade modal-submit-questions" id="login_register" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 <div class="modal-dialog">
 <div class="modal-content">
@@ -207,7 +207,7 @@ require_once("vars.php");
 <?php
 require_once("scriptfooter.php");
 ?>
-</body> 
+</body>
 
 <!-- Mirrored from qaengine.enginethemes.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 07 Jul 2016 13:52:04 GMT -->
 </html>
