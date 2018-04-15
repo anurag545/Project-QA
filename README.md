@@ -1,8 +1,5 @@
-# ProjectQA
-It is based on online examination. Anyone can make a exam and anyone or added users can give the exam, also according to the categories you can give exams. Marks will be notified.I've built Online Exam working for 2 months and still one part is remain to complete.
-
-It is written entirely in HTML/CSS/JS/Mongoose and MEAN Stack. Live link at 
-http://online-xam.herokuapp.com/
+# QA - Question Answering
+It is Question Answering site. You can ask questions,see answers,give your answers.You can see questions according to categories and subcategories. It is written entirely in HTML/CSS/JS and PHP with MySQL.
 
 ## Signup Page
 Sign Up page for both students and teachers.You have to fill required details for sign up.After that you can go to student or teacher page
