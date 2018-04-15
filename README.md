@@ -31,4 +31,10 @@ Here, you can add question according to selected categorie and sub categories of
 <img src="images/qa5.png" width="80%">
 </p>
 
+## Search Questions
+You can search questions according to keywords you enter in search bar or you can search questions according to categories and there sub categories.   
+<p align="center">
+<img src="images/qa6.png" width="80%">
+</p>
+
 These are basic features of my work, there are so many others features too.
